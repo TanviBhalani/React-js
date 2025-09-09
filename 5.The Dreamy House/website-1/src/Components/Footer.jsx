@@ -56,7 +56,24 @@ export default function Footer() {
               
                 <button className='relative align-middle select-none font-sans font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-12 max-sm:w-[108px] h-12 max-sm:h-[108px] text-sm text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none rounded-full bg-yellow-500'>
                    <span className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform'>
-                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className='max-sm:w-15 max-sm:h-15' stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5 transition-transform group-hover:rotate-45"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path></svg>
+                   <svg
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  viewBox="0 0 24 24"
+  strokeWidth="1.5"
+  stroke="currentColor"
+  aria-hidden="true"
+  data-slot="icon"
+  className="h-5 w-5 transition-transform group-hover:rotate-45 max-sm:w-[50px] max-sm:h-[50px]"
+>
+  <path
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    d="M12 4.5v15m7.5-7.5h-15"
+  />
+</svg>
+
+                       {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className='max-sm:w-[20px] max-sm:h-[20px]' stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5 transition-transform group-hover:rotate-45"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path></svg> */}
                    </span>
                 </button>
             </div>
