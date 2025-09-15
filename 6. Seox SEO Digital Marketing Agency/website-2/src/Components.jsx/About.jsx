@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function About() {
   return (
-    <div className='flex  py-20 px-28 justify-between max-sm:py-5 max-sm:px-4 max-sm: gap-10 max-sm:w-full max-sm:flex-col'>
+    <div className='flex  py-20 px-28 justify-between max-sm:py-5 max-sm:px-4 max-sm: gap-10 max-sm:w-full max-sm:flex-col max-sm:overflow-x-hidden'>
         <div className="part1 w-100 max-sm:w-[100%]">
             <div className="flex" data-aos="zoom-in-left" data-aos-duration="900">
                 <img src="/images/mini.png" alt="" className='w-12 max-sm:w-8 max-sm:h-8 max-sm:mt-2'/>

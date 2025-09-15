@@ -8,7 +8,6 @@ import Choose from "./Components.jsx/Choose";
 import Work from "./Components.jsx/Work";
 import Clients from "./Components.jsx/Clients";
 import Blogs from "./Components.jsx/Blogs";
-import Footer from "./Components.jsx/Footer";
 
 export default function App() {
   useEffect(() => {
@@ -28,7 +27,7 @@ export default function App() {
       <Work/>
       <Clients/>
       <Blogs/>
-      <Footer/>
+
     </div>
   );
 }
