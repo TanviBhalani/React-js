@@ -1,71 +1,8 @@
-// import React from 'react'
-
-// export default function Blogs() {
-//     return (
-//         <div className='px-25 py-15 bg-[#f5f5f5]'>
-//             <div className="flex">
-//                 <img src="/images/mini.png" alt="" className="w-12" />
-//                 <p className="font-medium text-xl mt-2.5" data-aos="zoom-in-left" data-aos-duration="900"> OUR BLOG</p>
-//             </div>
-//             <div className="flex justify-between mt-3">
-//                 <h1 className="text-4xl font-medium w-150">Insights & Updates from the World of SEO Marketing Agency</h1>
-//                 <button className="h-12 w-65 ml-55 rounded-4xl bg-[#acff1c] text-black font-medium text-xl hover:animate-bounce transition cursor-pointer" data-aos="fade-left" data-aos-duration="900">Browse All Categories</button>
-//             </div>
-
-//             <div className="flex mt-15" data-aos="fade-up" data-aos-duration="1100">
-//                 <>
-//                     <img src="/images/blog1.png" alt="" className='w-160 h-75' />
-//                 </>
-//                 <>
-//                     <div className="first bg-[#ffffff] w-160 h-75 rounded-2xl ml-5 p-7">
-//                         <div className="flex">
-//                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#000" d="M19 4h-2V3a1 1 0 0 0-2 0v1H9V3a1 1 0 0 0-2 0v1H5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3m1 15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-7h16Zm0-9H4V7a1 1 0 0 1 1-1h2v1a1 1 0 0 0 2 0V6h6v1a1 1 0 0 0 2 0V6h2a1 1 0 0 1 1 1Z" /></svg>
-//                             <p className='text-lg font-medium -mt-0.5 ml-1'>12/12/2024</p>
-//                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className='ml-10'><g fill="#000" fill-rule="evenodd" clip-rule="evenodd"><path d="M16 9a4 4 0 1 1-8 0a4 4 0 0 1 8 0m-2 0a2 2 0 1 1-4 0a2 2 0 0 1 4 0" /><path d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11s11-4.925 11-11S18.075 1 12 1M3 12c0 2.09.713 4.014 1.908 5.542A8.99 8.99 0 0 1 12.065 14a8.98 8.98 0 0 1 7.092 3.458A9 9 0 1 0 3 12m9 9a8.96 8.96 0 0 1-5.672-2.012A6.99 6.99 0 0 1 12.065 16a6.99 6.99 0 0 1 5.689 2.92A8.96 8.96 0 0 1 12 21" /></g></svg>
-//                             <p className='text-lg font-medium'>John Doe</p>
-//                         </div>
-//                         <p className='font-bold hover:text-yellow-700 cursor-pointer text-xl mt-5'>Transform Your Online Presence with Expert SEO Strategies – Drive Traffic, Conversions & Business Growth with SEOX.</p>
-//                         <p className='text-xl mt-5 text-gray-600 leading-6.5'>The digital age, simply having a website isn't enough. To stand out in a sea of competition, you need strategic search engine optimization (SEO) that positions your brand.</p>
-//                         <div className="flex mt-5 cursor-pointer">
-//                             <p className='font-bold text-md'>Read More</p>
-//                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" className='mt-1'><path fill="#000" d="M17.92 6.62a1 1 0 0 0-.54-.54A1 1 0 0 0 17 6H7a1 1 0 0 0 0 2h7.59l-8.3 8.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0L16 9.41V17a1 1 0 0 0 2 0V7a1 1 0 0 0-.08-.38"/></svg>
-//                         </div>
-//                     </div>
-//                 </>
-//             </div>
-
-//             <div className="flex mt-7" data-aos="fade-down" data-aos-duration="1100">
-//                 <>
-//                     <div className="first bg-[#ffffff] w-160 h-75 rounded-2xl p-7">
-//                         <div className="flex">
-//                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#000" d="M19 4h-2V3a1 1 0 0 0-2 0v1H9V3a1 1 0 0 0-2 0v1H5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3m1 15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-7h16Zm0-9H4V7a1 1 0 0 1 1-1h2v1a1 1 0 0 0 2 0V6h6v1a1 1 0 0 0 2 0V6h2a1 1 0 0 1 1 1Z" /></svg>
-//                             <p className='text-lg font-medium -mt-0.5 ml-1'>12/12/2024</p>
-//                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className='ml-10'><g fill="#000" fill-rule="evenodd" clip-rule="evenodd"><path d="M16 9a4 4 0 1 1-8 0a4 4 0 0 1 8 0m-2 0a2 2 0 1 1-4 0a2 2 0 0 1 4 0" /><path d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11s11-4.925 11-11S18.075 1 12 1M3 12c0 2.09.713 4.014 1.908 5.542A8.99 8.99 0 0 1 12.065 14a8.98 8.98 0 0 1 7.092 3.458A9 9 0 1 0 3 12m9 9a8.96 8.96 0 0 1-5.672-2.012A6.99 6.99 0 0 1 12.065 16a6.99 6.99 0 0 1 5.689 2.92A8.96 8.96 0 0 1 12 21" /></g></svg>
-//                             <p className='text-lg font-medium'>John Doe</p>
-//                         </div>
-//                         <p className='font-bold hover:text-yellow-700 cursor-pointer text-xl mt-5'>Transform Your Online Presence with Expert SEO Strategies – Drive Traffic, Conversions & Business Growth with SEOX.</p>
-//                         <p className='text-xl mt-5 text-gray-600 leading-6.5'>The digital age, simply having a website isn't enough. To stand out in a sea of competition, you need strategic search engine optimization (SEO) that positions your brand.</p>
-//                         <div className="flex mt-5 cursor-pointer">
-//                             <p className='font-bold text-md'>Read More</p>
-//                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" className='mt-1'><path fill="#000" d="M17.92 6.62a1 1 0 0 0-.54-.54A1 1 0 0 0 17 6H7a1 1 0 0 0 0 2h7.59l-8.3 8.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0L16 9.41V17a1 1 0 0 0 2 0V7a1 1 0 0 0-.08-.38"/></svg>
-//                         </div>
-//                     </div>
-//                 </>
-//                 <>
-//                     <img src="/images/blog1.png" alt="" className='w-160 h-75 ml-5' />
-//                 </>
-//             </div>
-
-//         </div>
-//     )
-// }
-
-
 import React from "react";
 
 export default function Blogs() {
   return (
-    <div className="px-4 sm:px-25 py-10 sm:py-15 bg-[#f5f5f5]">
+    <div className="px-4 sm:px-25 py-10 sm:py-15 bg-[#f5f5f5] ">
       {/* Header */}
       <div className="flex items-center">
         <img src="/images/mini.png" alt="" className="w-10 sm:w-12" />
@@ -105,7 +42,7 @@ export default function Blogs() {
       </div>
 
       {/* Second Blog */}
-      <div className="flex flex-col sm:flex-row mt-10 sm:mt-15 items-center sm:items-start" data-aos="fade-up" data-aos-duration="1100">
+      <div className="flex flex-col sm:flex-row mt-5 max-sm:mt-15 items-center sm:items-start" data-aos="fade-up" data-aos-duration="1100">
 
         <div className="first bg-[#ffffff] max-sm:h-full w-[300px] h-75 sm:w-160 rounded-2xl  p-5 sm:p-7 mt-5 sm:mt-0">
           {/* Meta Info */}
@@ -129,7 +66,7 @@ export default function Blogs() {
           </div>
         </div>
 
-        <img src="/images/blog1.png" alt="" className="w-[300px] sm:w-160 h-75 max-sm:h-full sm:ml-5 rounded-xl"/>
+        <img src="/images/blog1.png" alt="" className="w-[300px] sm:w-160 h-75 max-sm:h-full sm:ml-5 rounded-xl max-sm: mt-5 sm:mt-0"/>
 
       </div>
       

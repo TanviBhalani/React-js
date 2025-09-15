@@ -156,9 +156,7 @@ export default function Work() {
       </div>
 
       <div className="flex flex-col sm:flex-row justify-between mt-3 gap-4 sm:gap-0">
-        <h1 className="text-2xl sm:text-4xl font-medium sm:w-100">
-          Our Proven Process for Delivering Success
-        </h1>
+        <h1 className="text-2xl sm:text-4xl font-medium sm:w-100">Our Proven Process for Delivering Success</h1>
         <button
           className="h-12 w-full sm:w-50 rounded-4xl bg-[#acff1c] text-black font-medium text-lg sm:text-xl hover:animate-bounce transition cursor-pointer"
           data-aos="fade-left"

@@ -25,7 +25,7 @@ export default function Clients() {
       {/* Content */}
       <div className="flex flex-col sm:flex-row mt-8 gap-6 sm:gap-0">
         {/* Reviews */}
-        <div className="review flex flex-col gap-5 w-full sm:w-auto">
+        <div className="review flex flex-col gap-5 w-full max-sm:items-center">
           {/* Card 1 */}
           <div className="flex bg-[#e3e2e2] max-sm:w-[300px] sm:w-150 h-auto sm:h-40 rounded-xl p-4 sm:p-0 max-sm:flex-col max-sm:items-center" data-aos="fade-right" data-aos-duration="900" data-aos-delay="400">
             <div className="left bg-[#415eb5] rounded-full h-20 w-20 sm:h-28 sm:w-28 flex-shrink-0 m-2 sm:m-5 overflow-hidden max-sm:m-0">
@@ -89,9 +89,9 @@ export default function Clients() {
           <img
             src="/images/shape1.png"
             alt=""
-            className="max-sm:w-28 max-sm:h-28 w-40 h-40 mt-100 -ml-100 animate-bounce [animation-duration:5s]"
+            className="max-sm:w-28 max-sm:h-28 w-40 h-40 mt-70 -ml-130 animate-bounce [animation-duration:5s]"
           />
-          <img src="/images/testrg.png" alt="" className="ml-20 sm:-mt-135" />
+          <img src="/images/testrg.png" alt="" className="ml-10 sm:-mt-135 w-250" />
         </div>
       </div>
     </div>
