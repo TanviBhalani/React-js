@@ -148,7 +148,7 @@ export default function Work() {
   };
 
   return (
-    <div className="px-5 sm:px-25 py-15 bg-[#f5f5f5] max-sm:overflow-x-hidden max-sm:w-full">
+    <div className="px-5 sm:px-25 py-15 bg-[#f5f5f5]">
       {/* Header */}
       <div className="flex items-center" data-aos="zoom-in-left" data-aos-duration="900">
         <img src="/images/mini.png" alt="" className="w-12" />

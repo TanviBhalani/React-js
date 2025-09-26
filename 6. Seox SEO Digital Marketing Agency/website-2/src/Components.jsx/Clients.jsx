@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Clients() {
   return (
-    <div className="px-5 sm:px-25 py-15 max-sm:overflow-x-hidden max-sm:w-full">
+    <div className="px-5 sm:px-25 py-15">
       {/* Header */}
       <div className="flex items-center" data-aos="zoom-in-left" data-aos-duration="900">
         <img src="/images/mini.png" alt="" className="w-10 sm:w-12" />
@@ -23,7 +23,7 @@ export default function Clients() {
       </div>
 
       {/* Content */}
-      <div className="flex flex-col sm:flex-row mt-8 gap-6 sm:gap-0 max-sm:w-full">
+      <div className="flex flex-col sm:flex-row mt-8 gap-6 sm:gap-0">
         {/* Reviews */}
         <div className="review flex flex-col gap-5 w-full max-sm:items-center">
           {/* Card 1 */}

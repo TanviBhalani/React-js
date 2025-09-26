@@ -111,7 +111,7 @@ function Card({ num, title, description }) {
 
 export default function Choose() {
   return (
-    <div className="max-sm:py-10 py-15 px-25 max-sm:px-5 max-sm:overflow-x-hidden max-sm:w-full">
+    <div className="max-sm:py-10 py-15 px-25 max-sm:px-5">
       
       {/* Heading */}
       <div className="flex items-center" data-aos="zoom-in-left" data-aos-duration="900">

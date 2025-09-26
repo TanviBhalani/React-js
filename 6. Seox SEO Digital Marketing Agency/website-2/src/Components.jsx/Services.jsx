@@ -65,7 +65,7 @@ function Card({ num, title, description }) {
 
 export default function Services() {
   return (
-    <div className="bg-[#f5f5f5] w-full py-15 max-sm:py-5 px-25 max-sm:px-5 max-sm:overflow-x-hidden max-sm:w-full">
+    <div className="bg-[#f5f5f5] w-full py-15 max-sm:py-5 px-25 max-sm:px-5">
       
       {/* Top Section */}
       <div className="flex  max-sm:flex-col sm:flex-row  sm:items-start  sm:gap-10 mb-12">

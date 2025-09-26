@@ -266,7 +266,7 @@ export default function Home() {
   };
 
   return (
-    <div className="relative bg-[url('/images/hero1-bg.jpg')] bg-cover bg-center w-full min-h-screen sm:h-[900px] max-sm:overflow-x-hidden max-sm:w-full">
+    <div className="relative bg-[url('/images/hero1-bg.jpg')] bg-cover bg-center w-full min-h-screen sm:h-[900px]">
       {/* Navbar */}
       <div className="nav flex justify-between items-center px-4 sm:px-20 py-4 sm:py-7">
         {/* Left Logo */}

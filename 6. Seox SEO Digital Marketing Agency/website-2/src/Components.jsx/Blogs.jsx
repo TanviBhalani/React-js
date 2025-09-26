@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Blogs() {
   return (
-    <div className="px-4 sm:px-25 py-10 sm:py-15 bg-[#f5f5f5] max-sm:overflow-x-hidden max-sm:w-full">
+    <div className="px-4 sm:px-25 py-10 sm:py-15 bg-[#f5f5f5] ">
       {/* Header */}
       <div className="flex items-center">
         <img src="/images/mini.png" alt="" className="w-10 sm:w-12" />
