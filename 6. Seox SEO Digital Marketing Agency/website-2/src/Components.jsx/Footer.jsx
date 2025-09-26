@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Footer() {
   return (
-    <div className="px-30 py-25 bg-[url('/images/hero1-bg.jpg')] bg-cover bg-center w-full h-200 max-sm:px-5 max-sm:h-325">
+    <div className="px-30 py-25 bg-[url('/images/hero1-bg.jpg')] bg-cover bg-center w-full h-200 max-sm:px-5 max-sm:h-auto">
       {/* Heading */}
       <h1 className="text-white text-4xl font-medium text-center max-sm:text-xl">
         Ready To Grow Your Business With SEOX
@@ -29,7 +29,7 @@ export default function Footer() {
       </div>
 
       {/* Footer Sections */}
-      <div className="flex justify-between mt-20 border-b border-gray-500 max-sm:flex-wrap max-sm:px-10  max-sm:gap-10 max-sm:mt-10">
+      <div className="flex justify-between mt-20 border-b border-gray-500 max-sm:flex-wrap max-sm:px-5  max-sm:gap-10 max-sm:mt-10">
         {/* About */}
         <div className="part1 w-90 mb-10 max-sm:w-full max-sm:text-center ">
           <img
