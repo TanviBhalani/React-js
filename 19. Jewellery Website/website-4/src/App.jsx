@@ -1,26 +1,41 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { CartProvider } from "./Context/CartContext";
 import Navbar from "./Component/Navbar";
-import Home from "./pages/Home";
-// import ProductDetail from "./pages/ProductDetail";
-import CartPage from "./pages/CartPage";
+import Carousel1 from "./Component/Carousel1";
+import Product from "./Component/Product";
+import FeaturesBar from "./Component/FeaturesBar";
+import JewelryShowcase from "./Component/JewelryShowcase";
+import JewelryShowCase2 from "./Component/JewelryShowCase2";
+import Testimonials from "./Component/Testimonial";
+import Banner from "./Component/Banner";
+import Brand from "./Component/Brand";
+import Newsletter from "./Component/Newsletter";
+import Footer from "./Component/Footer";
+
 
 function App() {
   return (
-    <CartProvider>
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          {/* <Route path="/product/:id" element={<ProductDetail />} /> */}
-          <Route path="/cart" element={<CartPage />} />
-        </Routes>
-      </Router>
-    </CartProvider>
+    <Router>
+      <Navbar />
+      <Carousel1 />
+      <FeaturesBar/>
+      <JewelryShowcase/>
+      <Product/>
+      <JewelryShowCase2/>
+      <Testimonials/>
+      <Banner/>
+      <Brand/>
+      <Newsletter/>
+      <Footer/>
+      
+      
+      
+    </Router>
   );
 }
 
 export default App;
+
+
 
 
