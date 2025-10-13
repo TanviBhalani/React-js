@@ -177,8 +177,8 @@ const Testimonials = () => {
       </div>
 
       {/* Carousel */}
-      <div className="w-full overflow-hidden  max-sm:w-[300px] max-sm:-mx-13">
-        <div className="relative w-full max-sm:w-[300px] mx-auto overflow-hidden">
+      <div className="w-full overflow-hidden  max-sm:w-full">
+        <div className="relative w-full max-sm:w-full overflow-hidden">
           <div
             className="flex transition-transform duration-700 ease-in-out"
             style={{

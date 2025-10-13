@@ -22,7 +22,7 @@ import { ChevronUp } from "lucide-react";
 export default function Footer() {
     const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
     return (
-        <footer className="bg-white border-t border-gray-200 text-gray-700  max-sm:border-2 max-sm:border-black max-sm:mx-0">
+        <footer className="bg-white border-t border-gray-200 text-gray-700   max-sm:mx-0">
             {/* TOP SECTION */}
             <div className="max-w-8xl px-6 sm:px-12 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap- mx-5 max-sm:flex-wrap">
 

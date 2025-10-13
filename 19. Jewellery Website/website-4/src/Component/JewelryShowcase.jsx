@@ -23,7 +23,7 @@ const jewelryItems = [
 
 export default function JewelryShowcase() {
   return (
-    <div className="w-full bg-white py-12 h-160 max-sm:w-[300px] max-sm:mx-0 max-sm:h-195 max-sm:-mt-10">
+    <div className="w-full bg-white py-12 h-160 max-sm:w-full max-sm:mx-0 max-sm:h-195 max-sm:-mt-10 max-sm:flex max-sm:justify-center">
       {/* 💎 Responsive Grid */}
       <div className="max-w-8xl grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-6 mx-15 h-150 max-sm:mx-5 max-sm:w-70 max-sm:grid-cols-1 max-sm:h-auto max-sm:gap-5">
         
@@ -32,7 +32,7 @@ export default function JewelryShowcase() {
           {jewelryItems.slice(1).map((item, index) => (
             <div
               key={index}
-              className="relative overflow-hidden rounded-lg group w-150 h-70 max-sm:w-full max-sm:h-[220px]"
+              className="relative overflow-hidden rounded-lg group w-150 h-70 max-sm:w-[100%]  max-sm:h-[220px]"
             >
               <img
                 src={item.image}
