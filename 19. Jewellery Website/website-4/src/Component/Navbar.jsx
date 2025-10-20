@@ -81,6 +81,7 @@ const Navbar = () => {
           </div>
 
           <a href="#" className="hover:text-[#cf967e]">COLLECTIONS</a>
+          
           <a href="#" className="hover:text-[#cf967e]">CONTACT</a>
           <a href="#" className="hover:text-[#cf967e]">BLOG</a>
         </nav>

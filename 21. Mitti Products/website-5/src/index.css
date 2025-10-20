@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  animation: marquee 25s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Base keyframes for infinite scroll */
+@keyframes marquee-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Speeds */
+.marquee-left-slow {
+  animation: marquee-left 25s linear infinite;
+}
+.marquee-left-fast {
+  animation: marquee-left 15s linear infinite;
+}
+.marquee-right-slow {
+  animation: marquee-right 25s linear infinite;
+}
+.marquee-right-fast {
+  animation: marquee-right 15s linear infinite;
+}
+
+/* Pause on hover */
+.marquee-left-slow:hover,
+.marquee-left-fast:hover,
+.marquee-right-slow:hover,
+.marquee-right-fast:hover {
+  animation-play-state: paused;
+}
+
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
