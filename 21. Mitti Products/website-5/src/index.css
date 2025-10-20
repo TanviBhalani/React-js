@@ -68,3 +68,65 @@
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;     /* Firefox */
 }
+
+
+
+/* Continuous slider with no gap */
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.slide-track-left,
+.slide-track-right {
+  display: flex;
+  width: calc(250px * 18); /* approximate total width (adjust if needed) */
+}
+
+/* Left direction */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Right direction */
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Animation classes */
+.slide-track-left {
+  animation: scroll-left 30s linear infinite;
+}
+
+.slide-track-right {
+  animation: scroll-right 30s linear infinite;
+}
+
+/* Optional: pause when hovered */
+.slide-track-left:hover,
+.slide-track-right:hover {
+  animation-play-state: paused;
+}
+
+
+
+
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-raleway {
+  font-family: 'Raleway', sans-serif;
+}

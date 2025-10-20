@@ -10,7 +10,7 @@ export default function Cart() {
   }, [])
   return (
     <div>
-      <div className="flex  w-full justify-between flex-wrap px-10 bg-[#ebe5d5] h-screen">
+      <div className="flex  w-full justify-between flex-wrap px-10 bg-[#ebe5d5] max-sm:h-auto h-auto">
         {record.length > 0 ? (
           record.map((e, i) => {
             return (

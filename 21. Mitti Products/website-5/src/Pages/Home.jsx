@@ -1,6 +1,9 @@
 import React, { useEffect, useRef } from 'react'
 import AnnouncementBar2 from '../Components/AnnoucementBar2'
 import Card from '../Components/Card'
+import HeroSection from '../Components/HeroSection';
+import BrandSlider from '../Components/BrandSlider';
+import Footer from '../Components/Footer';
 
 export default function Home() {
     const scrollRef = useRef(null);
@@ -208,7 +211,7 @@ export default function Home() {
 
 
             {/* Cards */}
-            <div className="bg-[#f5f3eb] w-full pb-10 px-10 max-sm:px-10 max-sm:w-full max-sm:border-2">
+            <div className="bg-[#f5f3eb] w-full pb-10 px-10 max-sm:px-10 max-sm:w-full">
                 <h1 className="text-5xl text-[#333333] font-serif max-sm:text-3xl">
                     The Rest of Your Furniture
                 </h1>
@@ -240,7 +243,62 @@ export default function Home() {
             </div>
 
 
+            <HeroSection />
 
+            <BrandSlider />
+
+
+            {/* Featured */}
+            <div className="bg-[#f5f3eb] w-full py-10 px-8">
+                <h1 className="text-5xl text-[#333333] font-serif max-sm:text-3xl max-sm:text-center">Latest News Articles & News Blog</h1>
+
+                <div className="flex justify-between mt-4 max-sm:flex-col max-sm:text-center max-sm:mt-5">
+                    <p className="text-lg text-gray-500 tracking-wide max-sm:text-xs">Browse our curated collections for every style.</p>
+                    <p className="text-[#333333] mr-10 text-lg sm:text-xl underline font-serif cursor-pointer max-sm:text-xs max-sm:mr-1">Big Sale ↗</p>
+                </div>
+
+                {/* Scrollable Wrapper */}
+                <div className="flex mt-10 justify-between  max-sm:space-x-4 max-sm:overflow-x-scroll ">
+                    <div className="one flex-shrink-0 snap-center ">
+                        <img src="/images/categories-01.webp" alt="" className="w-83 h-80" />
+                        <p className='text-[1.5rem] font-serif text-[#333333] w-80 mt-3 leading-8 hover:text-[#704428] cursor-pointer'>Solid Wood vs Engineered Wood: Which Is the Best Choie for Your Home...</p>
+                        <div className="flex my-5 justify-between border-b-1 w-30">
+                            <p className="text-xl text-[#333333] font-serif mb-1">Read More</p>
+                            <p className="text-xl text-[#333333] font-serif font-medium cursor-pointer">↗</p>
+                        </div>
+                    </div>
+
+                    <div className="two flex-shrink-0 snap-center">
+                        <img src="/images/categories-02.jpg" alt="" className="w-83 h-80" />
+                        <p className='text-[1.5rem] font-serif text-[#333333] w-80 mt-4 leading-7 hover:text-[#704428] cursor-pointer '> How to Choose the Perfect Sofa for Your Living Room and lifestyle, ...</p>
+                        <div className="flex my-5 justify-between border-b-1 w-30 ml-2">
+                            <p className="text-xl text-[#333333] font-serif mb-1">Read More</p>
+                            <p className="text-xl text-[#333333] font-serif font-medium cursor-pointer">↗</p>
+                        </div>
+                    </div>
+
+                    <div className="three flex-shrink-0 snap-center">
+                        <img src="/images/categories-03.jpg" alt="" className="w-83 h-80" />
+                        <p className='text-[1.5rem] font-serif text-[#333333] w-80 mt-4 leading-7 hover:text-[#704428] cursor-pointer '>How to Design a Modern Minimalist Bedroom Using Furniture That Does...</p>
+                        <div className="flex my-5 justify-between border-b-1 w-30 ml-2">
+                            <p className="text-xl text-[#333333] font-serif mb-1">Read More</p>
+                            <p className="text-xl text-[#333333] font-serif font-medium cursor-pointer">↗</p>
+                        </div>
+                    </div>
+
+                    <div className="four flex-shrink-0 snap-center">
+                        <img src="/images/categories-04.webp" alt="" className="w-83 h-80" />
+                        <p className='text-[1.5rem] font-serif text-[#333333] w-80 mt-4 leading-7 hover:text-[#704428] cursor-pointer '>The Ultimate Dining Table Buying Guide: How to Pick the Right Shape...</p>
+                        <div className="flex my-5 justify-between border-b-1 w-30 ml-2">
+                            <p className="text-xl text-[#333333] font-serif mb-1">Read More</p>
+                            <p className="text-xl text-[#333333] font-serif font-medium cursor-pointer">↗</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <Footer/>
 
 
 
