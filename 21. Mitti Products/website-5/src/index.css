@@ -1,0 +1,133 @@
+@import "tailwindcss";
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  animation: marquee 25s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Base keyframes for infinite scroll */
+@keyframes marquee-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Speeds */
+.marquee-left-slow {
+  animation: marquee-left 25s linear infinite;
+}
+.marquee-left-fast {
+  animation: marquee-left 15s linear infinite;
+}
+.marquee-right-slow {
+  animation: marquee-right 25s linear infinite;
+}
+.marquee-right-fast {
+  animation: marquee-right 15s linear infinite;
+}
+
+/* Pause on hover */
+.marquee-left-slow:hover,
+.marquee-left-fast:hover,
+.marquee-right-slow:hover,
+.marquee-right-fast:hover {
+  animation-play-state: paused;
+}
+
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+
+
+/* Continuous slider with no gap */
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.slide-track-left,
+.slide-track-right {
+  display: flex;
+  width: calc(250px * 18); /* approximate total width (adjust if needed) */
+}
+
+/* Left direction */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Right direction */
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Animation classes */
+.slide-track-left {
+  animation: scroll-left 30s linear infinite;
+}
+
+.slide-track-right {
+  animation: scroll-right 30s linear infinite;
+}
+
+/* Optional: pause when hovered */
+.slide-track-left:hover,
+.slide-track-right:hover {
+  animation-play-state: paused;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Raleway:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
+
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-raleway {
+  font-family: 'Raleway', sans-serif;
+}

@@ -1,0 +1,172 @@
+Library and framework both provide pre written code and functionalities but framework is fully independent but 
+library is not.
+
+React js:
+React is a javascript libraray maintained and developed by Facebook. Used to create single page application and provide us 
+rich ui interface.
+
+
+Components/Features of React js:
+- Virtual DOM
+- Components
+- JSX
+- One Way data minning
+
+
+
+SWC (Speedy Web Compiler)
+
+- Commands:
+npm create vite
+
+
+npm - (Node pakage manager)
+npx - (Node pakage executor)
+
+
+File name in  src in asset is in capital letter like ( Components.jsx )
+
+
+
+
+definition of Components:
+- Component is a reusable piece of code returns a part of ui.
+
+
+*There are two types of Component
+1. Functional Component
+2. Class Component
+
+
+
+1.Functional Component:
+-When we write a simple javascript function in a Component and it return some value.
+
+2.Class Component :
+- When we write ES6 classes (oops) in a Component.
+-Class component have all the features of react js like state,props,life cycle methods and all but functional component does not have those initially.
+
+-In react 16.8 hooks were introduced which provide all the features of react in functional component.
+
+
+There are three life cycle stages :-
+
+-Mounting -> Creation of a componenet
+
+-Updating -> Updation of a component
+
+-Unmounting -> Completion of a component
+
+
+
+
+
+Life Cycle Methods in Class Component
+
+-componentDidMount()
+
+-componentDidUpdate()
+
+-componentWillUnmount()
+
+
+
+
+Life cycle Method in Functional Component
+
+There is a hook called useEffect()
+
+
+
+
+State in React:
+- State refers to a javascript object that holds data specific to a componenet, which can change over time and influence the component's rendering.
+-State is accessed by -> this.state
+
+
+
+*When page load it is known as render.
+*When it reload again than it is known as rerendering 
+
+
+Props in react:
+-Props stands for properties used to pass data from parent to child component this is a fundamental concept of react js.
+-It follows one way flow like it flows from parent to child 
+
+
+
+
+
+
+
+
+
+Module:
+- This are user defined file and block of code which we can import and export.
+
+
+JSX :
+- Javascript XML 
+- It allows us to write html with javascript together.
+- It is represented through {}.
+
+
+
+
+
+
+
+-Hooks
+-Hooks allows us to use react feature in functional component all this features natively available in class component.
+Hooks were introduced in react 16.8 version 
+Example: state, ref and life cycle methods
+
+1.usestate
+- usestate is a important hook used to manage state in functional component. It takes one state variable and a functional update 
+It cause re-render on updatation
+
+
+
+2.useEffect
+-This is a important hook used to perform side effects in functional component like data fetching and api calling.
+
+-We can also perform life cycle methods in functional component using useEffect hook.
+
+
+3.useRef:
+- This is a hook used to create mutable reference with DOM elements and it does not cause re-render. 
+
+
+
+*DIFFERNCE BETWEEN usestate AND useRef: (for me)
+
+
+
+Keys:
+Keys are special string attribute that you must include when creating lists of elements in React. They help React efficiently identify which items
+in a list have changed, been added, or been removed.
+
+
+Fragments:
+- React Fragments are a feature in react that allow you to group multiple elements returened by a components render method without adding an extra
+node to the DOM.
+
+When we remove div and there is only <> </> this is known as Fragments.
+
+
+
+Controlled Components:
+In a controlled component, the form data is handled by the React component's state. The state is the single source of truth for the input's value.
+-useState
+
+
+
+Uncontrolled Components:
+In an uncontrolled component, the form data is handled by the DOM itself, similar to traditional HTML forms. React does not actively manage the input's value.
+-useRef
+
+
+
+-Higher Order Component in React:
+A Higher-Order Component (HOC) in React is a function that takes a component as an argument and returns a new component with enhanced functionality 
+or modified behavior. It is a pattern for reusing component logic and achieving separation of concerns. 
