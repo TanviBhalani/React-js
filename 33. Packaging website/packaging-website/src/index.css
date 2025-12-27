@@ -1,0 +1,214 @@
+@import "tailwindcss";
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+
+.icon-box {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #000;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  background: transparent;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Wrapper holds both icons */
+.icon-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Common icon styles */
+.icon {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  transition: transform 0.3s ease;
+}
+
+/* Default visible icon */
+.icon-black {
+  top: 10px;
+  color: black;
+}
+
+/* Hidden white icon (below) */
+.icon-white {
+  top: 40px;
+  color: white;
+}
+
+/* Hover effects */
+.icon-box:hover {
+  background-color: black;
+}
+
+/* Black icon moves UP & OUT */
+.icon-box:hover .icon-black {
+  transform: translate(-50%, -40px);
+}
+
+/* White icon comes FROM DOWN to center */
+.icon-box:hover .icon-white {
+  transform: translate(-50%, -30px);
+}
+
+
+
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeUp {
+  animation: fadeSlide 0.6s cubic-bezier(0.16,1,0.3,1) forwards;
+}
+
+
+
+
+
+
+video.exit {
+  animation: slideUpVideo 0.8s ease-in-out forwards;
+}
+
+@keyframes slideUpVideo {
+  to {
+    transform: translateY(-120%);
+    opacity: 0;
+  }
+}
+
+
+.map-line {
+  fill: none;
+  stroke: #1f2f23;
+  stroke-width: 1.4;
+
+  /* dotted */
+  stroke-dasharray: 4 6;
+  stroke-dashoffset: 200;
+
+  animation: travel 0.6s linear forwards;
+}
+
+@keyframes travel {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+
+
+
+
+
+
+.map-line {
+  fill: none;
+  stroke-width: 1.4;
+  stroke-dashoffset: 200;
+  animation: travel 0.6s linear forwards;
+}
+
+/* dotted routes */
+.map-line.dotted {
+  stroke: #1f2f23;
+  stroke-dasharray: 4 6;
+}
+
+/* solid routes */
+.map-line.solid {
+  stroke: #1f2f23;
+  stroke-dasharray: none;
+}
+
+@keyframes travel {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+
+
+
+@keyframes slideRight {
+  from {
+    transform: translateX(120px);
+    opacity: 0.98;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(-250px);
+    opacity: 0.98;
+  }
+  to {
+    transform: translateX(1000);
+    opacity: 1;
+  }
+}
+
+.slide-right {
+  animation: slideRight 1.4s cubic-bezier(0.29, 1.5, 0.22, 1);
+}
+
+.slide-left {
+  animation: slideLeft 1.4s cubic-bezier(0.29, 1.5, 0.22, 1);
+}
+
+
+.writing-mode-vertical {
+  writing-mode: vertical-rl;
+}
+
+
+
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(1.32);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+.animate-zoomIn {
+  animation: zoomIn 1.5s ease-out forwards;
+}
+

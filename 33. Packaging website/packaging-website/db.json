@@ -1,0 +1,70 @@
+{
+  "users": [
+    {
+      "id": "2080",
+      "email": "abc345@gmail.com",
+      "password": "123456"
+    }
+  ],
+  "wishlist": [
+    {
+      "id": "1766511686642",
+      "firstName": "Tanvi",
+      "lastName": "Bhalani",
+      "email": "tanvibhalani05@gmail.com",
+      "contact": "123456789",
+      "company": "vidhata",
+      "business": "",
+      "consent": true
+    },
+    {
+      "id": 1766860683490,
+      "firstName": "Janvi",
+      "lastName": "Bhalani",
+      "email": "janvibhalani09@gmail.com",
+      "contact": "123456789",
+      "company": "vidhata",
+      "business": "",
+      "consent": true
+    },
+    {
+      "id": 1766860725053,
+      "firstName": "Rekha",
+      "lastName": "Bhalani",
+      "email": "abc345@gmail.com",
+      "contact": "123456789",
+      "company": "vidhata",
+      "business": "",
+      "consent": false
+    }
+  ],
+  "queries": [
+    {
+      "id": "1766610371778",
+      "industry": "Agriculture",
+      "firstName": "Tanvi",
+      "lastName": "Bhalani",
+      "email": "janvibhalani09@gmail.com",
+      "contact": "123456789",
+      "needs": [
+        "Branding"
+      ],
+      "message": "hello",
+      "file": {},
+      "fileName": "Screenshot 2025-04-15 220300.png"
+    },
+    {
+      "id": "1766610776454",
+      "industry": "Food Service",
+      "firstName": "Tanvi",
+      "lastName": "Bhalani",
+      "email": "janvibhalani09@gmail.com",
+      "contact": "123456789",
+      "needs": [
+        "Branding"
+      ],
+      "message": "heyy there",
+      "fileName": "Screenshot 2025-04-15 220300.png"
+    }
+  ]
+}
