@@ -322,7 +322,7 @@ export default function Coffee() {
                 filteredProducts.map(item => (
                   <div key={item.id} className="relative h-85 p-2">
                     {item.promo && (
-                      <span className="absolute right-0 top-6 bg-[#bf6537] text-white text-xs px-2 py-1 mt-4 -mr-4 rotate-90 max-sm:top-11">
+                      <span className="absolute right-0 top-6 bg-[#bf6537] text-white text-xs px-2 py-1 mt-4 -mr-4 rotate-90 max-sm:hidden">
                         PROMOTION
                       </span>
                     )}

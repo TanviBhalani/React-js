@@ -364,6 +364,8 @@ const { scrollYProgress: scrollYProgress2 } = useScroll({
 
 </section>
 
+{/* mobile section */}
+
 <section ref={mobileSectionRef} className="relative min-h-[140vh] bg-[#faf7ef] block md:hidden">
 
   {/* MOBILE HERO */}
@@ -400,7 +402,7 @@ const { scrollYProgress: scrollYProgress2 } = useScroll({
     </p>
 
   </div>
-  <div className="relative h-72 -mt-15 rounded-3xl bg-cover mx-4"
+  <div className="relative h-72 -mt-22 rounded-3xl bg-cover mx-4"
     style={{ backgroundImage: "url('/images/bg6.jpg')" }}>
       {/* TRUE INFINITE MARQUEE — SAME ANIMATION */}
     <div className="relative w-full overflow-hidden py-4 pt-8 sm:pt-10">
