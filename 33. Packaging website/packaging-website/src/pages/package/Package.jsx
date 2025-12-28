@@ -384,7 +384,7 @@ const { scrollYProgress: scrollYProgress2 } = useScroll({
   src="/images/bowl.png"
   alt="Package Bowl"
   style={{
-    y: useTransform(scrollYProgress2, [0, 1], [0, 750]), // ⬇️ straight down
+    y: useTransform(scrollYProgress2, [0, 1], [0, 780]), // ⬇️ straight down
     scale: useTransform(scrollYProgress2, [0, 1], [1, 1.44]),
   }}
   className="

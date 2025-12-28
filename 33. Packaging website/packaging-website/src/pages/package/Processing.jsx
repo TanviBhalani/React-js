@@ -412,7 +412,7 @@ const { scrollYProgress: scrollYProgress2 } = useScroll({
       src="/images/process.png"
       alt="Food Processing Packaging"
       style={{
-        y: useTransform(scrollYProgress2, [0, 1], [0, 750]), // ⬇️ straight down
+        y: useTransform(scrollYProgress2, [0, 1], [0, 780]), // ⬇️ straight down
         scale: useTransform(scrollYProgress2, [0, 1], [1, 1.04]),
       }}
       className="
@@ -433,7 +433,7 @@ const { scrollYProgress: scrollYProgress2 } = useScroll({
 
   {/* MOBILE BACKGROUND + MARQUEE */}
   <div
-    className="relative h-72 -mt-30 rounded-3xl bg-cover mx-4"
+    className="relative h-72 -mt-25 rounded-3xl bg-cover mx-4"
     style={{ backgroundImage: "url('/images/proo1.jpg')" }}
   >
 
