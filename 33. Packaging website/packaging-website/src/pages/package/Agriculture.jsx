@@ -319,7 +319,7 @@ const { scrollYProgress: scrollYProgress2 } = useScroll({
 
   {/* MOBILE BACKGROUND + MARQUEE */}
   <div
-    className="relative h-72 -mt-15 rounded-3xl bg-cover mx-4"
+    className="relative h-72 -mt-40 rounded-3xl bg-cover mx-4"
     style={{ backgroundImage: "url('/images/ag-bg.jpg')" }}
   >
 
