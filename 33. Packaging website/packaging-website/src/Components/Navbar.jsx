@@ -2,6 +2,7 @@ import { ShoppingCart, User, FileText } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { useCart } from "../context/CartContext";
 
 
 export default function Navbar() {
@@ -65,6 +66,8 @@ export default function Navbar() {
   }, [location.pathname]);
 
 
+
+  const { cartCount } = useCart();
 
 
   return (
@@ -568,11 +571,29 @@ export default function Navbar() {
               <span>Credit Application</span>
             </div>
 
-            <div className="relative icon-box">
-              {/* <ShoppingCart size={18} /> */}
+            {/* <div className="relative icon-box">
               <ShoppingCart className="icon icon-black" size={18} />
               <ShoppingCart className="icon icon-white" size={18} />
-            </div>
+            </div> */}
+
+            <div className="flex justify-between items-center">
+      
+      {/* CART */}
+      <Link to="/cart" className="relative">
+        <div className="relative icon-box">
+          <ShoppingCart className="icon icon-black" size={18} />
+          <ShoppingCart className="icon icon-white absolute top-0 left-0" size={18} />
+        </div>
+
+        {/* CART COUNT */}
+        {cartCount > 0 && (
+          <span className="absolute -top-2 -right-2 bg-black text-white text-xs px-2 rounded-full">
+            {cartCount}
+          </span>
+        )}
+      </Link>
+
+    </div>
 
             {/* PROFILE */}
             <div className="relative">

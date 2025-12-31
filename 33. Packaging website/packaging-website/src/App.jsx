@@ -26,6 +26,9 @@ import Rewards from "./pages/resources/Rewards";
 import Blogs from "./pages/resources/Blogs";
 import Faqs from "./pages/resources/Faqs";
 import Contact from "./pages/contact/Contact";
+import ProductPage from "./pages/shop/ProductPage";
+import CartPopup from "./Components/CartPopup";
+import Cart from "./pages/Cart";
 
 
 export default function App() {
@@ -82,6 +85,7 @@ export default function App() {
   `}
 >
   <Navbar />
+  <CartPopup/>
 
   <main className="pt-22">
     <Routes>
@@ -110,6 +114,9 @@ export default function App() {
       <Route path="/shop/cutlery" element={<Cutlery />} />
       <Route path="/shop/extras" element={<Extras />} />
       <Route path="/shop/smoothies" element={<Smoothies />} />
+
+      <Route path="/product/:slug" element={<ProductPage />} />
+      <Route path="/cart" element={<Cart />} />
     </Routes>
   </main>
 </div>
