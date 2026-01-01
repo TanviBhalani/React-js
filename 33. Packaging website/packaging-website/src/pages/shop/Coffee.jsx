@@ -127,9 +127,9 @@ export default function Coffee() {
                   We offer nationwide delivery.
                 </h3>
                 <img src="/images/ad1.png" className="h-30 w-50" />
-                <p className="text-sm mt-4">
+                {/* <p className="text-sm mt-4">
                   Free delivery over R2000 incl. vat
-                </p>
+                </p> */}
               </div>
 
               {filteredProducts.length === 0 ? (
