@@ -212,3 +212,15 @@ video.exit {
   animation: zoomIn 1.5s ease-out forwards;
 }
 
+
+
+
+/* Hide scrollbar but allow scrolling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

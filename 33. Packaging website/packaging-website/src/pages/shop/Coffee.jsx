@@ -8,7 +8,7 @@ export default function Coffee() {
 
 
   const coffeeProducts = products.filter(
-    (item) => item.category === "Cups"
+    (item) => item.category === "Coffee"
   );
 
 

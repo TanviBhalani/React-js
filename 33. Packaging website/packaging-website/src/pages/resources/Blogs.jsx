@@ -69,7 +69,7 @@ export default function Blogs() {
 
       {/* Arrow Button */}
       <Link
-        to="/blogs"
+        to="/register"
         className="inline-flex items-center justify-center
                    w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl
                    bg-black text-white hover:bg-gray-800 transition"

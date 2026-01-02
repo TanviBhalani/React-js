@@ -6,6 +6,7 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 
+
 export default function Footer() {
 
     const [hoveredCard, setHoveredCard] = useState(null);
@@ -108,81 +109,6 @@ export default function Footer() {
 
 
 
-      {/* <section className="bg-[#ded9c4] px-32 py-20 relative">
-      
-        <div className="flex justify-between items-start mb-24">
-          <h2 className="text-5xl font-medium text-[#1c2b1f]" data-aos="fade-down">
-            Innovated for Industry Leaders.
-          </h2>
-      
-      
-          <button onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="w-14 h-14 cursor-pointer border border-[#1c2b1f] rounded-xl flex items-center justify-center text-4xl">
-        ↑
-      </button>
-      
-        </div>
-      
-        <div className="grid grid-cols-4 gap-10 items-end" data-aos="fade-down" data-aos-delay="300">
-      
-          <div className="flex justify-center">
-            <img src="/images/logo2.svg" alt="Logo" className="w-68" />
-          </div>
-      
-          {industries.map((item) => (
-            <div
-              key={item.id}
-              onMouseEnter={() => setHoveredCard(item.id)}
-              onMouseLeave={() => setHoveredCard(null)}
-              className="relative h-65 rounded-3xl hover:rounded-7xl hover:border-0 border border-[#1c2b1f] overflow-hidden flex items-center justify-center transition-all duration-600 cursor-pointer"
-            >
-              {hoveredCard === item.id ? (
-                <>
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    className="absolute inset-0 w-full h-full object-cover transition-all duration-300"
-                  />
-                  <div className="absolute inset-0 bg-black/30"></div>
-                  <span className="relative text-white text-xl font-medium">
-                    {item.title}
-                  </span>
-                </>
-              ) : (
-                <span className="text-xl text-[#1c2b1f]">
-                  {item.title}
-                </span>
-              )}
-            </div>
-          ))}
-        </div>
-      
-        <div className="mt-20 border border-[#1c2b1f] rounded-xl px-6 py-4 flex justify-between items-center"  data-aos="fade-down" data-aos-delay="300">
-          <span className="text-sm text-[#1c2b1f]">
-            © Top Tech Packaging 2025. All Rights Reserved
-          </span>
-      
-          <div className="flex gap-4 text-[#1c2b1f]">
-            <FaFacebookF />
-            <FaInstagram />
-            <FaLinkedinIn />
-          </div>
-      
-          <div className="flex gap-6 text-sm text-[#1c2b1f]">
-            <a href="#">Contact Us</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms & Conditions</a>
-          </div>
-        </div>
-      
-        <a
-          href="#"
-          className="fixed bottom-6 right-6 w-14 h-14 rounded-full bg-[#1c2b1f] flex items-center justify-center text-white text-xl"
-        >
-          <FaWhatsapp />
-        </a>
-      
-      </section> */}
-
       <section className="bg-[#ded9c4] px-6 sm:px-10 md:px-20 lg:px-32 py-12 sm:py-16 md:py-20 relative">
 
   {/* Heading */}
@@ -269,7 +195,7 @@ export default function Footer() {
   {/* WhatsApp Floating */}
   <a
     href="#"
-    className="fixed bottom-4 sm:bottom-6 right-4 sm:right-6 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#1c2b1f] flex items-center justify-center text-white text-lg sm:text-xl"
+    className="fixed z-10 bottom-4 sm:bottom-6 right-4 sm:right-6 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#1c2b1f] flex items-center justify-center text-white text-lg sm:text-xl"
   >
     <FaWhatsapp />
   </a>

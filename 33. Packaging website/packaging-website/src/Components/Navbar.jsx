@@ -46,7 +46,7 @@ export default function Navbar() {
 
 
   useEffect(() => {
-    if (mobileOpen && window.innerWidth < 768 ) {
+    if (mobileOpen && window.innerWidth < 768) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "";
@@ -74,7 +74,7 @@ export default function Navbar() {
     <>
 
       {/* ================= MOBILE MENU (FULL) ================= */}
-{mobileOpen && (      <div
+      {mobileOpen && (<div
         className={`
     fixed top-0 left-0 right-0  bg-[#fffdf5] z-9999 md:hidden
     transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]
@@ -171,10 +171,22 @@ export default function Navbar() {
         </div>
 
         {/* CREDIT BAR */}
-        <div className="bg-[#e6e6d8] py-3 flex justify-center items-center gap-2 text-sm -mt-17">
+        {/* <div className="bg-[#e6e6d8] py-3 flex justify-center items-center gap-2 text-sm -mt-17">
           <FileText size={14} />
           Credit Application
-        </div>
+        </div> */}
+
+        <a
+  href="/pdfs/Credit-Application-Top-Tech-Packaging.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  onClick={(e) => e.stopPropagation()}
+  className="bg-[#e6e6d8] py-3 flex justify-center items-center gap-2 text-sm -mt-17 hover:underline cursor-pointer"
+>
+  <FileText size={14} />
+  Credit Application
+</a>
+
 
         {/* ================= SLIDING CONTAINER ================= */}
         <div className="relative w-full flex-1 overflow-hidden">
@@ -419,12 +431,14 @@ export default function Navbar() {
 
                   {/* LEFT */}
                   <div className="space-y-3 text-sm">
-                    <p className="font-medium flex items-center gap-2">
-                      Promotions
-                      <span className="text-xs bg-orange-500 text-white px-2 py-0.5 rounded">
-                        Sale
-                      </span>
-                    </p>
+                    <Link to="/shop" className="inline-block">
+                      <p className="font-medium flex items-center gap-2 hover:opacity-80 transition">
+                        Promotions
+                        <span className="text-xs bg-orange-500 text-white px-2 py-0.5 rounded">
+                          Sale
+                        </span>
+                      </p>
+                    </Link>
 
                     {links.map((item) => (
                       <Link
@@ -566,10 +580,15 @@ export default function Navbar() {
           {/* ================= RIGHT ICONS ================= */}
           <div className="flex items-center gap-4">
 
-            <div className="hidden md:flex items-center gap-1 text-sm cursor-pointer">
-              <FileText size={16} />
-              <span>Credit Application</span>
-            </div>
+            <a
+  href="/pdfs/Credit-Application-Top-Tech-Packaging.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="hidden md:flex items-center gap-1 text-sm cursor-pointer hover:underline"
+>
+  <FileText size={16} />
+  <span>Credit Application</span>
+</a>
 
             {/* <div className="relative icon-box">
               <ShoppingCart className="icon icon-black" size={18} />
@@ -577,23 +596,23 @@ export default function Navbar() {
             </div> */}
 
             <div className="flex justify-between items-center">
-      
-      {/* CART */}
-      <Link to="/cart" className="relative">
-        <div className="relative icon-box">
-          <ShoppingCart className="icon icon-black" size={18} />
-          <ShoppingCart className="icon icon-white absolute top-0 left-0" size={18} />
-        </div>
 
-        {/* CART COUNT */}
-        {cartCount > 0 && (
-          <span className="absolute -top-2 -right-2 bg-black text-white text-xs px-2 rounded-full">
-            {cartCount}
-          </span>
-        )}
-      </Link>
+              {/* CART */}
+              <Link to="/cart" className="relative">
+                <div className="relative icon-box">
+                  <ShoppingCart className="icon icon-black" size={18} />
+                  <ShoppingCart className="icon icon-white absolute top-0 left-0" size={18} />
+                </div>
 
-    </div>
+                {/* CART COUNT */}
+                {cartCount > 0 && (
+                  <span className="absolute -top-2 -right-2 bg-black text-white text-xs px-2 rounded-full">
+                    {cartCount}
+                  </span>
+                )}
+              </Link>
+
+            </div>
 
             {/* PROFILE */}
             <div className="relative">

@@ -12,6 +12,7 @@ import {
   FaLinkedinIn,
   FaWhatsapp,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 
 
@@ -1032,7 +1033,9 @@ const { scrollYProgress: scrollYProgress2 } = useScroll({
         Our Process
       </h2>
 
-      <button
+
+      <Link to="/contact">
+  <button
         className="
           bg-white
           text-[#0f2a1f]
@@ -1048,6 +1051,9 @@ const { scrollYProgress: scrollYProgress2 } = useScroll({
       >
         Explore Custom Solutions
       </button>
+</Link>
+
+    
     </div>
 
     {/* PROCESS CARDS */}
@@ -1198,12 +1204,11 @@ const { scrollYProgress: scrollYProgress2 } = useScroll({
         <br /> questions
       </h2>
 
-      <button
-        className="mt-6 sm:mt-8 bg-black text-white text-sm px-6 py-3 rounded"
-        data-aos="fade-right"
-      >
-        View all
-      </button>
+     <Link to="/faqs">
+  <button className="mt-6 sm:mt-8 cursor-pointer bg-black text-white text-sm px-6 py-3 rounded hover:bg-gray-700 transition">
+    View all
+  </button>
+</Link>
     </div>
 
     {/* RIGHT */}

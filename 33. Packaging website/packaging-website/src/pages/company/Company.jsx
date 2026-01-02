@@ -1,6 +1,7 @@
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
 import Footer from "../../Components/Footer";
+import { Link } from "react-router-dom";
 
 const data = [
   {
@@ -417,9 +418,11 @@ export default function Company() {
                 Yucca standards is refined until it does.
               </p>
 
-              <button className="mt-6 bg-black text-white px-5 py-2 rounded-lg text-sm cursor-pointer hover:bg-gray-600">
-                About us
-              </button>
+              <Link to="/rewards">
+                <button className="mt-6 bg-black text-white px-5 py-2 rounded-lg text-sm cursor-pointer hover:bg-gray-600">
+                  About us
+                </button>
+              </Link>
             </div>
           </div>
 
@@ -679,9 +682,15 @@ export default function Company() {
           </p>
 
           {/* Button */}
-          <button className="bg-black text-white px-6 py-3 rounded-md text-sm font-medium hover:bg-black/90 transition" data-aos="fade-down" data-aos-delay="300">
-            Contact Us
-          </button>
+          <Link to="/contact">
+            <button
+              className="bg-black text-white px-6 cursor-pointer py-3 rounded-md text-sm font-medium hover:bg-black/90 transition"
+              data-aos="fade-down"
+              data-aos-delay="300"
+            >
+              Contact Us
+            </button>
+          </Link>
         </div>
       </section>
 

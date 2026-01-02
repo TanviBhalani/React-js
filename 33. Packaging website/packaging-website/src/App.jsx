@@ -29,6 +29,8 @@ import Contact from "./pages/contact/Contact";
 import ProductPage from "./pages/shop/ProductPage";
 import CartPopup from "./Components/CartPopup";
 import Cart from "./pages/Cart";
+import Deli from "./pages/shop/Deli";
+import TakeOut from "./pages/shop/TakeOut";
 
 
 export default function App() {
@@ -114,6 +116,8 @@ export default function App() {
       <Route path="/shop/cutlery" element={<Cutlery />} />
       <Route path="/shop/extras" element={<Extras />} />
       <Route path="/shop/smoothies" element={<Smoothies />} />
+      <Route path="/shop/deli" element={<Deli />} />
+      <Route path="/shop/takeout" element={<TakeOut />} />
 
       <Route path="/product/:slug" element={<ProductPage />} />
       <Route path="/cart" element={<Cart />} />
