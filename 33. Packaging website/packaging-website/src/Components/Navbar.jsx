@@ -177,7 +177,7 @@ export default function Navbar() {
         </div> */}
 
         <a
-  href="/pdfs/Credit-Application-Top-Tech-Packaging.pdf"
+  href="/pdfs/Credit-Application-Top-Tech-Packaging-SPACED.pdf"
   target="_blank"
   rel="noopener noreferrer"
   onClick={(e) => e.stopPropagation()}
@@ -581,7 +581,7 @@ export default function Navbar() {
           <div className="flex items-center gap-4">
 
             <a
-  href="/pdfs/Credit-Application-Top-Tech-Packaging.pdf"
+  href="/pdfs/Credit-Application-Top-Tech-Packaging-SPACED.pdf"
   target="_blank"
   rel="noopener noreferrer"
   className="hidden md:flex items-center gap-1 text-sm cursor-pointer hover:underline"
