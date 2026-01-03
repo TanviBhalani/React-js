@@ -608,7 +608,7 @@ export default function Package() {
               <span className="absolute inset-0 bg-black translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out"></span>
 
               {/* Button text */}
-              <Link to="/shop" className="inline-block">
+              <Link to="/shop/takeout" className="inline-block">
                 <span
                   className="relative z-10 text-black group-hover:text-white transition-colors duration-300"
                   data-aos="fade-left"

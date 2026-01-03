@@ -2,6 +2,8 @@ import React from "react";
 import Footer from "../../Components/Footer";
 import { Link } from "react-router-dom";
 
+
+
 export default function Explore() {
 
   const steps = [

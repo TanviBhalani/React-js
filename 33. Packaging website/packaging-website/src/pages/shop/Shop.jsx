@@ -44,7 +44,7 @@ export default function Shop() {
         </h1>
 
         {/* MAIN GRID */}
-        <div className="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-10 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-10 items-start max-sm:flex-col max-sm:border-2">
 
           {/* ================= LEFT FILTER (FIXED) ================= */}
           <aside
@@ -180,7 +180,14 @@ export default function Shop() {
                 <hr />
 
                 <div className="flex justify-between items-center">
-                  <p className="mt-1">Sign up now</p>
+                  <p className="mt-1">
+                    <Link
+                      to="/register"
+                      className="text-black hover:underline cursor-pointer"
+                    >
+                      Sign up now
+                    </Link>
+                  </p>
                   <p className="text-2xl font-medium cursor-pointer">→</p>
                 </div>
               </div>

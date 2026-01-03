@@ -186,7 +186,14 @@ export default function Deli() {
                 </p>
                 <hr />
                 <div className="flex justify-between">
-                  <p className="mt-1">Sign up now</p>
+                  <p className="mt-1">
+                    <Link
+                      to="/register"
+                      className="text-black hover:underline cursor-pointer"
+                    >
+                      Sign up now
+                    </Link>
+                  </p>
                   <p className="text-2xl font-medium cursor-pointer">→</p>
                 </div>
               </div>
