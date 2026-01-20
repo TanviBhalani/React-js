@@ -109,8 +109,8 @@
 
 
 import { useEffect, useState } from "react";
-import Left from "./Components/Left";
-import Right from "./Components/Right";
+import Left from "./temp/Left";
+import Right from "./temp/Right";
 
 export default function Content() {
   const [theme, setTheme] = useState("dark");
