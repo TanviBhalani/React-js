@@ -182,7 +182,7 @@ import {
 import { TbBrandCpp } from "react-icons/tb";
 import { SiFirebase } from "react-icons/si";
 import { collection, addDoc } from "firebase/firestore";
-import { db } from "../../firebase"; // adjust path if needed
+import { db } from "../firebase"; // adjust path if needed
 import { FaLinkedin, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 
