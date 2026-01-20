@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+
+:root {
+  --bg: #000;
+  --card: #111;
+  --text: #e8e5e5;
+}
+
+.light {
+  --bg: #f6f2f2;
+  --card: #fff;
+  --text: #000;
+}
